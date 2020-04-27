@@ -4,7 +4,7 @@ class Post
   @@all = []
  
   def initialize(title)
-    @name = name
+    @title = title
     save
   end
  
@@ -12,11 +12,11 @@ class Post
     @@all << self
   end
   
-  def artist_name
-    if self.artist == nil 
+  def author_name
+    if self.author == nil 
       nil 
     else
-      self.artist.name
+      self.author.name
     end
   end
   
