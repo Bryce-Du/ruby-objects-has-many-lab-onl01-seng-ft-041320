@@ -9,7 +9,7 @@ class Artist
   
   
   def songs
-    @songs
+    Song.all
   end
   
 end
